@@ -69,11 +69,7 @@ public class TCPClient {
 	 */
 	public static void main(String[] args) throws Exception {
 		// handle commandline parameters (there should be 2 of them IP and port)
-<<<<<<< HEAD
-		String ipaddr = "127.0.0.1";
-=======
 		String ipaddr = "169.254.6.174";
->>>>>>> 751a4cc9f33bbea8976122e9aad398fbcba46fbb
 		String port = "12345";
 		if (args.length == 2) {
 			ipaddr = args[0];
