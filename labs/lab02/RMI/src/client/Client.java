@@ -12,7 +12,8 @@ public class Client {
 			MathServer mth;
 //			String name = "MathD";
 			String name = "MathD2";
-			Registry registry = LocateRegistry.getRegistry("localhost", 2010);
+			Registry registry = LocateRegistry.getRegistry("169.254.12.202", 2010);
+			// Registry registry = LocateRegistry.getRegistry("localhost", 2010);
 			mth = (MathServer) registry.lookup(name);
 			// reading input data from commandline
 			int a = Integer.parseInt(args[0]);

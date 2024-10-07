@@ -13,7 +13,7 @@ public class Server {
 //		if (System.getSecurityManager() == null)
 //			System.setSecurityManager(new SecurityManager());
 //		System.setProperty("java.security.policy","file:///tmp/test.policy");
-//		System.setProperty("java.rmi.server.hostname","127.0.0.1");
+		System.setProperty("java.rmi.server.hostname","169.254.12.202");
 
 		// Name of our "service"
 		String name = "MathD";
