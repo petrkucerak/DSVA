@@ -16,8 +16,10 @@ public class Client {
 			// Registry registry = LocateRegistry.getRegistry("localhost", 2010);
 			mth = (MathServer) registry.lookup(name);
 			// reading input data from commandline
-			int a = Integer.parseInt(args[0]);
-			int b = Integer.parseInt(args[1]);
+			int a = 2;
+			int b = 3;
+			//int a = Integer.parseInt(args[0]);
+			//int b = Integer.parseInt(args[1]);
 			// Show the results
 			System.out.println("Client: " + a + " + " + b + " = " + mth.add(a, b));
 		}
