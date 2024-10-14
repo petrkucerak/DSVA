@@ -39,6 +39,7 @@ public class MathServerImpl2 extends UnicastRemoteObject implements MathServer {
 	public int div(int a, int b) throws RemoteException{
 		if (b == 0){
 			System.err.println("Division by 0 isn't possible!");
+			return 0;
 		}
 		int result;
 		result = a / b;
