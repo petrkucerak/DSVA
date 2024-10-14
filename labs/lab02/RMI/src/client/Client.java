@@ -22,6 +22,11 @@ public class Client {
 			//int b = Integer.parseInt(args[1]);
 			// Show the results
 			System.out.println("Client: " + a + " + " + b + " = " + mth.add(a, b));
+			System.out.println("Client: " + a + " - " + b + " = " + mth.sub(a, b));
+			System.out.println("Client: " + a + " / " + b + " = " + mth.div(a, b));
+			System.out.println("Client: " + a + " / " + b + " = " + mth.divF((float)a, (float)b));
+			System.out.println("Client: " + a + " * " + b + " = " + mth.mul(a, b));
+			System.out.println("Client: " + a + " / " + 0 + " = " + mth.div(a, 0));
 		}
 		catch (Exception e) {
 			// Something is wrong ...
