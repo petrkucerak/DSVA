@@ -26,4 +26,28 @@ public class MathServerImpl2 extends UnicastRemoteObject implements MathServer {
 		System.out.println("Implementation.2.sub: " + a + " - " + b + " = " + result);
 		return result;
 	}
+
+	@Override
+	public int mul(int a, int b) throws RemoteException {
+		int result;
+		result = a * b;
+		System.out.println("Implementation.2.mul: " + a + " * " + b + " = " + result);
+		return result;
+	}
+
+	@Override
+	public int div(int a, int b) throws RemoteException{
+		int result;
+		result = a / b;
+		System.out.println("Implementation.2.div: " + a + " / " + b + " = " + result);
+		return result;
+	}
+
+	@Override
+	public float divF(float a, float b) throws RemoteException{
+		float result;
+		result = a / b;
+		System.out.println("Implementation.2.divF: " + a + " / " + b + " = " + result);
+		return result;
+	}
 }

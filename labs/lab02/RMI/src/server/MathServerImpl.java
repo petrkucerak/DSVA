@@ -25,4 +25,31 @@ public class MathServerImpl implements MathServer {
 		System.out.println("Implementation.1.sub: " + a + " - " + b + " = " + result);
 		return result;
 	}
+
+	@Override
+	public int mul(int a, int b) throws RemoteException {
+		int result;
+		result = a * b;
+		System.out.println("Implementation.1.mul: " + a + " * " + b + " = " + result);
+		return result;
+	}
+
+	 @Override
+	 public int div(int a, int b) throws RemoteException{
+		 int result;
+		 result = a / b;
+		 System.out.println("Implementation.1.div: " + a + " / " + b + " = " + result);
+		 return result;
+	 }
+
+	 @Override
+	 public float divF(float a, float b) throws RemoteException{
+		 float result;
+		 result = a / b;
+		 System.out.println("Implementation.1.divF: " + a + " / " + b + " = " + result);
+		 return result;
+	 }
+
+
+
 }
